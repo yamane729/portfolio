@@ -1,0 +1,558 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: skyblue;
+  }
+  
+  header {
+    background-color: #a3e8d4;
+    text-align: center;
+    padding: 20px 0;
+    background-size: 100% 100%;  /* 画像をヘッダーのサイズに合わせる */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  header p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .current_location {
+    display: flex;
+    align-items: center; /* 縦方向で中央揃え */
+    background-color: #e0e0e0;
+    padding: 1% 0;
+    margin: auto 0;
+  }
+  
+  .current_location img {
+    width: 30px; /* 画像の幅を調整（必要に応じて変更） */
+    margin-right: 10px; /* 画像とテキストの間隔を調整 */
+    margin-left: 20px;
+  }
+  
+  .current_location span {
+    font-size: 16px; /* テキストのフォントサイズを調整 */
+  }
+  
+  main {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  aside {
+    background-color: #eafaf6;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex: 1;
+    /* background-image: url(img/fire-51.gif) */
+  }
+  
+  aside nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside nav li {
+    /* display: flex; */
+    margin-bottom: 10px;
+    border-bottom: solid 0.5px silver;
+    align-items: center;
+  }
+  
+  aside nav li img {
+    width: 3vw;
+    margin: 2px;
+    padding: 0;
+  }
+  
+  aside nav a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .main-content {
+    width: 90%;
+    height:100%;
+    background-color: white;
+    padding: 3%;
+    border: 1px solid #ccc;
+    flex: 5;
+  }
+  
+  .main-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .center {
+    text-align: center;
+    margin: 0.7vw; 
+    margin-top: 2vw ;
+    display: block;
+  }
+  
+  .center strong {
+    font-size: 1.5vw;
+  }
+
+  .center h1 {
+    color: white;
+  }
+
+  .center p {
+    font-size: 1.5vw;
+  }
+  
+  .strategy {
+    font-size: 2vw;
+    color: #3399FF;
+    text-decoration: underline;
+  }
+  
+  
+  .triangle {
+    margin: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.5vw solid transparent;  /* 左の透明な境界線 */
+    border-right: 1.5vw solid transparent; /* 右の透明な境界線 */
+    border-top: 3vw solid #3399FF;       /* 上の境界線を色付きの三角形に */
+    display: inline-block;
+    font-size: 0;  /* フォントサイズは不要 */
+  }
+  
+  .background-home {
+    text-align: center;
+    padding: 1%;
+    background-color: #e0e0e0;
+  }
+  
+  .background {
+    text-align: center;
+    padding: 1%;
+    background-color: #e0e0e0;
+    position: relative;
+  }
+  
+  .background img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .background p {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    margin:0 0 0 2%;
+    font-size:2.5vw;
+    color: #e2e2e2;
+  }
+
+  .contents {
+    margin: 10px 10%;
+    color: #3399FF;
+    font-size: 2vw;
+  }
+  
+  .ol-box {
+    border: 0.6vw solid #3399FF; /* 青色の2pxのボーダー */
+    padding: 10px; /* ボーダーとコンテンツの間にスペースを追加 */
+    margin: 0 5vw 5vw 5vw; /* 上下の間にスペースを追加 */
+    border-radius: 40px; /* 角を丸くする */
+  }
+  
+  .ol-box ol {
+    margin-left: 0.7vw;
+    list-style-position: inside; /* リストの番号をインデント内に配置 */
+  }
+
+  .ol-box ol li {
+    margin-left: 1.5vw;
+    font-size: 1vw;
+  }
+  
+  .information {
+      margin: 0 5vw;
+      line-height: 40px;
+  }
+
+  .information .contents {
+      margin: 6vw 0 0 0;
+  }
+
+  .information img {
+      width: 30vw;
+  }
+
+  .information h1 {
+    color: white;
+    margin-top: 3vw;
+  }
+
+  .information p {
+    font-size: 2vw;
+  }
+
+
+
+  iframe {
+      width: 30vw;
+      height: 20vw;
+  }
+
+  .detailed_information {
+      text-align: left;
+  }
+
+
+  .detailed_information p {
+  font-size: 1.7vw;
+  }
+
+  .box {
+      border: 1px solid #3295f1;
+      background-color: #3295f1;
+      border-radius: 0 30px 30px 0;
+      padding: 5px;
+      text-align: left;
+      margin-right: 20vw;
+  }
+  
+  .underline {
+      border-bottom: 1px solid silver;
+  }
+
+  .grid {
+    display: flex;
+    gap: 9%;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  /* .grid-item {
+    background-color: #a3e8d4;
+    width: calc(20% - 10px);
+    position: relative;
+    border-radius: 10%;
+  } */
+  
+  .grid-item img {
+    /* max-width: 170px; */
+    width: 12.5vw;
+    position: relative;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid-item::before {
+    content: '';
+    display: block;
+    padding-top: 20%;
+  }
+  
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+    position: -webkit-sticky;  /* Safari用のプレフィックス */
+    position: sticky;          /* スティッキーにする */
+    top: 20px;                 /* ビューポートの上端からの距離（適宜調整） */
+    align-self: flex-start;    /* 親要素内でサイドバーを上端に配置 */
+    height: 100vh;              /* 必要に応じてサイドバーの高さを自動調整 */
+  }
+  
+  /* .right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  } */
+  
+  .right-sidebar .gray-box img {
+    width: 100%;
+    margin:0 ;
+  }
+  
+  .text {
+    border: 1px solid gray;
+    width: 89.7%;
+    height: 50%;
+    padding: 0 10% 10% 0;
+    margin-top: 2%;
+  }
+  
+  .text p {
+    margin-left: 3%
+  }
+  
+  .list {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  li {
+    margin: 1% 0;
+  }
+
+  .detailed_information li {
+    font-size: 1.3vw;
+  }
+  
+  .block p {
+    margin-left: 2%;
+  }
+  
+  .footer {
+    padding: 1% 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #a3e8d4;
+  }
+  
+  .footer img {
+    width: 2%;
+  }
+  
+  .tyuumoku {
+      color: red;
+  }
+
+  .left {
+      margin: -100;
+  }
+
+
+  #image {
+    font-size: 0.7vw;
+  }
+
+  .summary h2 {
+    margin-top: 6vw;
+    border: 1px solid lightgreen;
+    background-color: lightgreen;
+    border-radius: 50px;
+    padding: 20px 0 20px 50px;
+    text-align: left;
+    font-size: 2vw;
+  }
+
+  .Tubo {
+    font-weight: bold;
+    font-family: 'Limelight';
+    font-size: 4vw;
+    line-height: 1.2;
+    z-index: 100;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg, red, orange, yellow, green, aqua, blue, purple);
+    background-size: 1200%;
+    animation: slide 4s linear infinite alternate;
+  }
+
+  .kasaneru {
+    position: relative;
+    text-align: center;
+  }
+
+  .kasaneru .fire {
+    opacity: 0.1;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-size: 1.8rem;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .kasaneru .fire2 {
+    opacity: 0.2;
+    margin-top: 10vw;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    font-size: 1.8rem;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .detailed_information .blue {
+    color: #3295F1;
+  }
+
+  .detailed_information .red {
+    color: #FF0000;
+  }
+  /* きのこ */
+  .kinotake {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: "Kaisei Tokumin", serif;
+    background-image: url(img/kinotakeR.png);
+    margin: 0;
+  }
+
+  .a {
+    margin: 0;
+    color: white;
+    font-size: 5vw;
+    width: 100%;  /* 横幅を100%に設定 */
+    height: 8vw;
+    background:rgba(125,125,125,0.3);
+    display: flex;             /* Flexboxを使用 */
+    justify-content: center;   /* 横方向で中央揃え */
+    align-items: center;       /* 縦方向で中央揃え */
+  }
+
+  .pink {
+    margin: 2vw 0;
+  }
+
+  .pink p {
+    color: #FF00FF;
+    font-size: 3vw;
+    margin: 0;
+    -webkit-text-stroke: 0.3px #FFF;
+  }
+
+  .yellow {
+    border: 4px solid #3295f1;
+    border-radius: 15px;
+    background-color: yellow;
+    width: 60%;
+    margin: auto;
+  }
+
+  .yellow ol {
+    font-size: 1.5vw;
+    list-style-position: inside; /* リスト番号をリストアイテム内に配置 */
+    padding-left: 8vw; /* 左の余白をなくす */
+    text-align: left; /* 中央寄せ */
+  }
+
+  .yellow li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .kinotake-contents {
+    color: white;
+    margin: 0 10vw;
+  }
+
+  .kinotake .detailed_information .a {
+    text-align: center;
+    padding: 2vw;
+  }
+
+  .kinotake .detailed_information .b {
+    font-size: 3vw;
+  }
+
+  .kinotake .detailed_information .red {
+    color: #F5B780;
+  }
+
+  .kinotake .detailed_information .green {
+    color: #ADF3A4; 
+  }
+
+  .kinotake .detailed_information ul li {
+    font-size: 1.6vw;
+  }
+
+  .kinotake .detailed_information img {
+    display: block;
+    margin: auto;
+  }
+  
+  /* きのこ */
+
+  .information img[src="img/フロア/rijichoushitsu.jpg"] {
+    width: 100%;  /* 幅いっぱいに表示 */
+    height: auto; /* 高さ自動調整 */
+    max-height: 800px;  /* 画像の最大高さを制限 */
+  }
+
+  .gaming{
+    font-size: 36px;
+    color: transparent;             
+    background-clip: text;          
+    background-image: linear-gradient(45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        aqua,
+        blue,
+        purple);
+    background-size: 1200%; 
+    animation: 4s linear 0s infinite alternate slide;    
+  }
+  
+  @keyframes slide { 
+    from { background-position: 0% 0%; } 
+    to { background-position: 100% 0%; }    
+  } 
+
+  .gaming-img {
+    /* 横長で虹色を作る */
+    background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+    animation: gaming 2s linear infinite;
+  }
+
+  @keyframes gaming-img {
+    /* backgroundを移動させる */
+    100% { background-position-x: 200%; }
+  }
+  
+  /* section {
+    background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+    animation: gaming 2s linear infinite;
+  }
+  @keyframes gaming {
+    100% { background-position-x: 200%; }
+  } */
+  
+  
